@@ -257,6 +257,7 @@
             const result = eval(
               display.value.replace(/×/g, "*").replace(/÷/g, "/")
             );
+            localStorage.setItem("calculations", `${localStorage.getItem("calculations")} ${display.value} = ${result}<br>`)
             display.placeholder = result;
             display.value = "";
           } catch (e) {
