@@ -6,6 +6,7 @@
     <title>Calculator</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Orbitron:wght@400..900&display=swap");
+      
       * {
         box-sizing: border-box;
         color: white;
@@ -14,6 +15,7 @@
         padding: 0;
         margin: 0;
       }
+      
       body {
         background-image: url("https://t4.ftcdn.net/jpg/02/28/68/07/360_F_228680721_gGbh5ylrMPMikdBIzWb8N1yGBLg8dmu9.jpg");
         align-items: center;
@@ -24,6 +26,7 @@
         display: flex;
         height: 100vh;
       }
+
       div {
         background-image: url("https://us.123rf.com/450wm/thawats/thawats1210/thawats121000092/15655323-texture-noire-en-plastique-ou-en-arri%C3%A8re-plan.jpg");
         box-shadow: rgb(23 37 51) 9px 11px 20px 0px;
@@ -41,23 +44,31 @@
       td {
         padding: 5px;
       }
-
+      
       h3 {
-        background: radial-gradient(rgba(255, 255, 255, 0.313), transparent);
+        background: radial-gradient(rgba(255, 255, 255, 0.2), transparent);
+        text-shadow: 2px 2px 2px rgb(255 255 255 / 60%);
+        color: rgba(255, 255, 255, 0.7);
+        font-family: sans-serif;
+        font-weight: lighter;
         text-align: center;
       }
 
       .solar-panel {
         text-align: center;
       }
+
       .solar-panel span {
-        box-shadow: inset rgb(26, 26, 26) 3px 2px 20px 0px;
-        border: 2px inset rgb(51, 51, 51);
-        background-color: rgb(11, 22, 42);
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHYxd7PYUhZaE-rBKpRFjCFYtUE18GmJfnLg&s");
+        box-shadow: inset rgb(0, 0, 0) 3px 2px 20px 0px;
+        background-repeat: no-repeat;
+        border: inset 3px black;
+        background-size: cover;
         display: inline-block;
         height: 20px;
-        width: 80px;
+        width: 84px;
       }
+
       input {
         box-shadow: inset rgb(0, 0, 0) 3px 2px 20px 0px;
         border: 5px inset rgb(39, 54, 47);
@@ -70,6 +81,7 @@
         color: gray;
         width: 100%;
       }
+
       button {
         box-shadow: inset rgb(47 47 47) 3px 2px 20px 0px;
         border: 5px outset rgb(122, 122, 122);
@@ -82,15 +94,19 @@
         height: 50px;
         width: 50px;
       }
+
       button:active {
         border-width: 3px;
       }
+
       td[colspan="2"] button {
         width: 100%;
       }
+
       button.s2-btn img {
         width: 50%;
       }
+
       .s-btn {
         text-shadow: 2px 2px 0px rgba(118, 118, 118, 0.56);
         box-shadow: inset rgb(196 124 1) 3px 3px 20px 0px;
@@ -98,6 +114,7 @@
         background-color: rgb(255, 190, 78);
         color: black;
       }
+
       .s2-btn {
         box-shadow: inset rgb(84 84 84 / 47%) 3px 2px 20px 0px;
         text-shadow: 2px 2px 0px rgba(118, 118, 118, 0.56);
@@ -113,7 +130,7 @@
       <table>
         <tr>
           <td colspan="2">
-            <h3>Casioo</h3>
+            <h3>¢@$|0</h3>
           </td>
           <td colspan="2" class="solar-panel">
             <span></span>
@@ -154,11 +171,7 @@
           <td colspan="2"><button onclick="toDisplay(0)">0</button></td>
           <td>
             <button class="s2-btn" onclick="cut()">
-              <img
-                src="pngegg.png"
-                alt="delete"
-                onerror="this.onerror=null; this.src='https://via.placeholder.com/50x50.png?text=X';"
-              />
+              <img src="pngegg.png"alt="delete">
             </button>
           </td>
           <td><button class="s-btn" onclick="calculate()">=</button></td>
